@@ -1,0 +1,63 @@
+<html>
+
+<script type="text/javascript" src="EmployeeRecords2.js"></script>
+<link rel="stylesheet" href="EmployeeRecords2.css">
+
+<div class="w3-container">
+
+<form>
+
+    <fieldset>
+    
+    
+    <h1> Employee Records </h1>
+
+    <input type="button" value="Show All Employee Records" onclick="showRecords()"><br>
+    <br>
+    <h3>Add New Employee Record:</h3>
+    
+    
+   
+        National insurance Number:<input type="text" id="nino">
+            <span style="color: red;visibility: hidden" id="ernino"> National Insurance number is missing</span> <br>
+        Full Name:<input type="text" id="name">
+            <span style="color: red;visibility: hidden" id="ername"> Employee name is missing</span> <br>
+        Telephone Number :<input type="text" id="tele">
+            <span style="color: red;visibility: hidden" id="ertele"> Employee telephone number is missing</span> <br>
+        Address :<input type="text" id="addr">
+            <span style="color: red;visibility: hidden" id="eraddr"> Employee Address is missing</span> <br>
+        Department :<select id="dept">
+            <option selected>Select Department</option>
+            <option value="HR"> Human Resources </option>
+            <option value="IT"> IT </option> 
+            <option value="Sales"> Sales </option>
+        </select><br>
+        <br>
+        
+        <input type="button" value="Add Record" onclick="check()">  
+        
+        <br>
+        <br>
+    
+
+        Filter by Department:
+        <select id="dropDept">
+            <option selected>Select Department</option>
+            <option value="HR"> Human Resources </option>
+            <option value="IT"> IT </option> 
+            <option value="Sales"> Sales </option>
+            
+    
+        </select>
+        <input type="button" value="Filter" onclick="filterRecords()" >
+
+   
+    
+    </fieldset>
+    
+    
+    </form>
+
+</div>
+
+</html>

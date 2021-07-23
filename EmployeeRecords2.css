@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+}
+
+form {
+    background-color: lightcyan;
+}
+
+Trow{
+    background-color: yellow;
+    border: thin;
+}
+
+table{
+    border-style: solid;
+    border: solid;
+    background-color: white;
+
+}
